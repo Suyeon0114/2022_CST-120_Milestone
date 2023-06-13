@@ -1,0 +1,608 @@
+/* 
+Suyeon Park 
+CST-120
+Hughes, Bill
+12/18/2022
+This is my own work except the help from 
+Part of in class example used as reference(Hughes,Bill) 
+*/
+
+/* ---------------------------------------------------
+                    Nav Bar Style
+--------------------------------------------------- */
+
+ul {
+    list-style-type: none;
+    /* sets the marker of a list item element */
+    /* overflow: hidden; */
+    /* property controls what happens to content that is too big to fit into an are/section */
+}
+
+li {
+    float: left;
+    /* make sure the content starts on the left of the area in the div */
+    /* border-right: 1px solid #F5DEB3; */
+}
+
+li a {
+    display: block;
+    /* Displays an element as a block element like <p>. It starts on a new line, and takes up the whole width. */
+    text-align: center;
+    padding: 10px;
+    /* top, right, bottom, left space around element content */
+    text-decoration: none;
+    /* remove the underline from the text */
+    color: #F5DEB3;
+    /* font color */
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    /* Letter spacing */
+    height: 30px;
+}
+
+.navBar {
+    background-color: rgba(45, 78, 63, 0.5);
+    position: sticky;
+    top: 0;
+    /* Hold the nav bar at this position on the page -- try 20px */
+    border-bottom: #F5DEB3 solid 2px;
+    height: 50px;
+    color: #817c72;
+}
+
+li a:hover {
+    /* from color palette */
+    font-size: 18px;
+}
+
+.logo {
+    width: 15%;
+    vertical-align: top;
+    margin-top: 0;
+    /* margin from the top */
+    margin: 5px 0 10px;
+    padding: 3px;
+    /* top, right, bottom, left space around element content */
+    float: left;
+    position: sticky;
+    top: 0px;
+    /* Hold the nav bar at this position on the page -- try 20px */
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    text-decoration: none;
+    /* remove the underline from the text */
+    color: #F5DEB3;
+    /* font color */
+}
+
+.logo:hover {
+    color: #F5DEB3;
+    /* font color */
+}
+
+/* Navbar Active Button */
+.active {
+    color: #817c72;
+}
+
+/* Change the text color */
+.navbar-nav .nav-item.active .nav-link {
+    /* Displays an element as a block element like <p>. It starts on a new line, and takes up the whole width. */
+    font-family: 'Times New Roman', Times, serif;
+    color: #F5DEB3;
+}
+
+/* Change the underline color */
+.navbar-nav>.nav-item.active {
+    color: #F5DEB3;
+}
+
+/* color of navbar menu */
+.nav-link {
+    color: #817c72;
+}
+
+/* color of navbar menu when hovered */
+.nav-link:hover {
+    color: #F5DEB3;
+}
+
+/* Adds line on the bottom of navbar */
+.container-fluid {
+    border-bottom: #F5DEB3 solid 2px;
+}
+
+/* color of dropdown menu */
+#navbarNavDropdown {
+    color: #817c72;
+}
+
+.dropdown-menu-dark {
+    background-color: rgba(17, 45, 32, 0.8);
+}
+
+.dropdown-item {
+    color: #817c72;
+    font-size: 18px;
+}
+
+.dropdown-item:hover {
+    color: #F5DEB3;
+    font-size: 18px;
+    background-color: rgba(17, 45, 32, 0.8);
+}
+
+#galleryDropdown {
+    color: #817c72;
+}
+
+#galleryDropdown:hover {
+    color: #F5DEB3;
+}
+
+.dropdown:hover #galleryDropdown {
+    color: #F5DEB3;
+}
+
+/* ---------------------------------------------------
+                 End - Nav Bar Style
+--------------------------------------------------- */
+
+/* ---------------------------------------------------
+                    Content Style
+--------------------------------------------------- */
+body {
+    background-color: rgb(45, 78, 63);
+    color: #F5DEB3;
+    font-family: 'Times New Roman', Times, serif;
+    caret-color: transparent;
+    /* getting rid of blinking typing point - caret */
+}
+
+.pageTitle {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    color: #F5DEB3;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.heroBanner {
+    align-content: center;
+    max-width: 100%;
+}
+
+/* ---------------------------------------------------
+                 End - Content Style
+--------------------------------------------------- */
+
+/* ---------------------------------------------------
+                    Flex Box Style
+--------------------------------------------------- */
+.flexCont {
+    display: flex;
+    /* Displays an element as a block level
+    (takes up the full width available) creating flex container */
+    flex-wrap: wrap;
+    /* Specifies if the flex item should wrap or not */
+    align-items: stretch;
+    /*Items are stretched to fit the container */
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(45, 78, 63);
+    height: 100%;
+    width: 100%;
+    padding: 0 4% 0 4%;
+}
+
+/* text styles */
+.flexText {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0 15px 0;
+    max-width: 50%;
+    gap: 0px;
+    cursor: default;
+}
+
+/* img styles */
+.flexImg {
+    display: flex;
+    flex-direction: column;
+    margin-right: 0px;
+    width: 42%;
+    gap: 0px;
+    border-radius: 1.5em;
+    margin: 1% 0 1% 0;
+    cursor: default;
+}
+
+/* section title styles */
+.h1Title {
+    padding: 5% 5% 1% 9%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 28px;
+    color: #F5DEB3;
+    text-align: left;
+    cursor: default;
+}
+
+/* past page year style */
+.schYear {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: #F5DEB3;
+    text-align: left;
+    padding-left: 10%;
+    padding-bottom: 30px;
+    cursor: default;
+}
+
+.pTag {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    color: #F5DEB3;
+    text-align: left;
+    padding: 0 20% 0 10%;
+    line-height: 30px;
+    cursor: default;
+}
+
+.motto {
+    font-family: 'Kaushan Script', cursive;
+    text-align: center;
+}
+
+.whoRU {
+    width: 10%;
+    height: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    background-color: #112d20;
+    border-radius: 1.1em;
+    border: 1.5px dashed #F5DEB3;
+    color: #F5DEB3;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    margin: 5% 0 0 5%;
+}
+
+.whoRU:hover {
+    opacity: 0.7;
+    background-color: #112d20;
+    border: #F5DEB3 dashed 1.5px;
+    color: #F5DEB3;
+    transform: scale(1.1, 1.1);
+}
+
+/* --------------------------------------------------- */
+/* Home Page Flex Box Style */
+
+.homeCont_flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    background-color: rgb(45, 78, 63);
+    margin-top: 2%;
+    height: 100%;
+    width: 100%;
+}
+
+.homeText_flex {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0px;
+    margin-bottom: 4%;
+}
+
+.homeTitle_flex {
+    font-family: 'Times New Roman', Times, serif;
+    color: #F5DEB3;
+    text-align: left;
+    padding-left: 2%;
+    margin-bottom: 3%;
+}
+
+.homeP_flex {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    color: #F5DEB3;
+    text-align: left;
+    padding-left: 4%;
+    line-height: 30px;
+}
+
+/* ---------------------------------------------------
+                End - Flex Box Style
+--------------------------------------------------- */
+
+
+/* ---------------------------------------------------
+                    Gallery Style
+--------------------------------------------------- */
+
+.gallery {
+    margin-top: 100px;
+    width: 100%;
+}
+
+/* ---------------------------------------------------
+                  End - Table Style
+--------------------------------------------------- */
+
+/* ---------------------------------------------------
+                  Animation Style
+--------------------------------------------------- */
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+
+    /* CSS opacity property is used to specify
+                        how opaque or transparent an element is 0 to 1 
+                        with 0 being completely transparent. */
+    /* we are making the opacity of 50% call Fade-out Text */
+}
+
+/* Bind the animation to the element */
+.onAndOff {
+    animation: blinker 2s ease-in-out infinite;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: #F5DEB3;
+    text-align: left;
+    padding-left: 10%;
+    padding-bottom: 30px;
+}
+
+.animation {
+    /* width: 300px; /* define border size */
+    /* height: 25px;
+    border: 1px solid #192821; */
+    transition: transform 2s;
+    /* We want to apply a transition to this element
+                                 transition provides a way to control animation
+                                 speed -- use ms (1000ms = 1s) because JavaScript 
+                                 does not understand seconds */
+    margin: 2% 0 0 45.25%;
+}
+
+.animation:hover {
+    width: 300px;
+    height: 25px;
+    transform: scale(1.2, 1.2);
+    /* zooming the element by 120% when the cursor hovers */
+}
+
+/* ---------------------------------------------------
+                 End - Animation Style
+--------------------------------------------------- */
+
+
+/* ---------------------------------------------------
+                    Button Style
+--------------------------------------------------- */
+/* Gallery Buttons */
+.ele_button {
+    width: 30%;
+    height: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    background-color: #112d20;
+    border-radius: 1.1em;
+    border: 1px dashed #F5DEB3;
+    color: #F5DEB3;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* when the button is hovered */
+.ele_button:hover {
+    opacity: 0.7;
+    background-color: #112d20;
+    border: #F5DEB3 dashed 1.5px;
+    color: #F5DEB3;
+    transform: scale(1.1, 1.1);
+}
+
+/* heart buttons */
+.heart {
+    width: 20%;
+    height: 30px;
+    font-size: 20px;
+    background-color: rgb(45, 78, 63);
+    border-color: rgb(45, 78, 63);
+    border-style: none;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+/* cursor shape for future page images */
+.dblclickImg1 {
+    cursor: pointer;
+}
+
+.dblclickImg2 {
+    cursor: pointer;
+}
+
+.dblclickImg3 {
+    cursor: pointer;
+}
+
+/* eaterEgg on future page text style */
+.easterEgg {
+    text-align: center;
+    margin-top: 80px;
+}
+
+/* family page dropdown style */
+.fam_dropdown {
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+
+/* ---------------------------------------------------
+                    Contact Style
+--------------------------------------------------- */
+/* Style all font awesome icons */
+.fa {
+    padding: 20px;
+    font-size: 16px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* instagram */
+.fa-instagram {
+    color: #817c72;
+}
+
+.fa-instagram:hover {
+    color: #F5DEB3;
+    font-size: 20px;
+}
+
+/* phone */
+.fa-phone {
+    color: #817c72;
+}
+
+.fa-phone:hover {
+    color: #F5DEB3;
+    font-size: 20px;
+}
+
+/* email */
+.fa-google {
+    color: #817c72;
+}
+
+.fa-google:hover {
+    color: #F5DEB3;
+    font-size: 20px;
+}
+
+/* ---------------------------------------------------
+                 End - Contact Style
+--------------------------------------------------- */
+
+/* ---------------------------------------------------
+                      Form Style
+--------------------------------------------------- */
+
+.form {
+    margin-top: 8%;
+    caret-color: #112d20;
+    width: 50%;
+}
+
+.form-control {
+    margin: 1% 0 1% 1%;
+    background-color: #112d20a6;
+    color: #f5debf;
+    border-color: #817c72;
+}
+
+.form-control:active,
+.form-control:focus,
+.form-control:focus:active {
+    background-color: #19412e;
+    border-color: #F5DEB3;
+    color: #F5DEB3;
+    caret-color: #F5DEB3;
+}
+
+/* send button */
+.btn-success {
+    background-color: rgb(17, 45, 32);
+    color: #F5DEB3;
+    border: #F5DEB3 dashed 1.5px;
+    align-self: center;
+    width: 100px;
+    margin-top: 5%;
+}
+
+.btn-success:hover {
+    opacity: 0.7;
+    background-color: #112d20;
+    border: #F5DEB3 dashed 1.5px;
+    color: #F5DEB3;
+    transform: scale(1.1, 1.1);
+}
+
+/* ---------------------------------------------------
+                    End - Form Style
+--------------------------------------------------- */
+
+/* ---------------------------------------------------
+                      Modal Style
+--------------------------------------------------- */
+
+/* modal button */
+.btn-warning {
+    background-color: rgb(17, 45, 32);
+    color: #F5DEB3;
+    border: #F5DEB3 dashed 1.5px;
+    align-self: center;
+    width: 100px;
+    margin-top: 50px;
+}
+
+.btn-warning:hover {
+    /* little bit transparent */
+    opacity: 0.7;
+    background-color: #112d20;
+    border: #F5DEB3 dashed 1.5px;
+    color: #F5DEB3;
+    /* getting bigger */
+    transform: scale(1.1, 1.1);
+}
+
+
+.modalFlex {
+    margin: 3% 47.5% 0 47.5%;
+}
+
+.modal-content {
+    background-color: rgba(129, 124, 114, 0.8);
+    color: #f5debf;
+}
+
+/* yes button */
+.btn-primary {
+    background-color: #112d20;
+    border-style: none;
+    color: #F5DEB3;
+}
+
+.btn-primary:hover {
+    background-color: #1d4c36;
+    border-style: none;
+    color: #F5DEB3;
+}
+
+/* no button */
+.btn-secondary {
+    background-color: #112d20;
+    border-style: none;
+    color: #F5DEB3;
+}
+
+.btn-secondary:hover {
+    background-color: #1d4c36;
+    border-style: none;
+    color: #F5DEB3;
+}
+
+/* ---------------------------------------------------
+                    End - Modal Style
+--------------------------------------------------- */
