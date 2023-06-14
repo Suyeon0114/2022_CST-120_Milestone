@@ -1,0 +1,154 @@
+<!-- 
+Suyeon Park 
+CST-120
+Hughes, Bill
+12/18/22
+This is my own work except the help from 
+Part of in class example used as reference(Hughes,Bill)
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Who Are My Family?</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <!-- Bootstrap - CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/final.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/final.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!-- Title + Hero Banner section -->
+    <section>
+        <div>
+            <!-- ---------------------------------------------------------------------------- -->
+            <!--                                Nav Bar - Begin                               -->
+            <!-- ---------------------------------------------------------------------------- -->
+            <div id="nav-placeholder">
+
+            </div>
+
+            <script>
+                $(function () {
+                    $("#nav-placeholder").load("../includes/final_nav.html", function () {
+                        $('.navbar-nav a:contains("Family")').parent().addClass('active');
+                    })
+                });
+            </script>
+
+            <!-- ---------------------------------------------------------------------------- -->
+            <!--                                Nav Bar - End                                 -->
+            <!-- ---------------------------------------------------------------------------- -->
+
+            <!-- hero banner image -->
+            <p><img class="heroBanner" src="../final_images/family/final_famHero.JPG" alt="Hello:)"
+                    style="vertical-align:top" />
+            </p>
+
+            <!-- Page subject -->
+            <h1 class="pageTitle">Who Are My Family?</h1>
+        </div>
+    </section>
+
+    <br><br><br>
+
+    <!-- Content Section -->
+    <section class="flexCont">
+
+        <!-- Mother Row -->
+        <div class="flexImg">
+            <img src="../final_images/family/final_fam2.jpg" alt="Mom Picture" style="border-radius: 1.5em;"
+                width="100%" height="100%">
+        </div>
+        <div class="flexText">
+            <div>
+                <h1 class="h1Title"><u>👸🏻 Mom - Yujin Jung</u></h1>
+                <p class="pTag">
+                    The Queen of the house. <br>
+                    Currently working as a Nurse (became Army right after graduation).
+                    <strong>47 years old</strong>, and loves eating out 🍽 and staying home.
+                </p>
+            </div>
+        </div>
+        <!-- End - Mother Row -->
+
+        <!-- Father Row -->
+        <div class="flexText">
+            <div>
+                <h1 class="h1Title"><u>🤴🏻 Dad - Changhun Park</u></h1>
+                <p class="pTag">
+                    Aerospace Technician - was an lieutenant colonel in the Air Force.
+                    <strong>51 years old</strong>, and loves taking picture, fishing 🐟, animal 🦮
+                </p>
+            </div>
+        </div>
+        <div class="flexImg">
+            <img src="../final_images/family/final_fam1.jpg" alt="Dad Picture" style="border-radius: 1.5em;"
+                width="100%" height="100%">
+        </div>
+        <!-- End - Father Row -->
+
+        <!-- Brother Row -->
+        <div class="flexImg">
+            <img src="../final_images/family/final_famBro.jpg" alt="Brother Picture" style="border-radius: 1.5em;"
+                width="100%" height="100%">
+        </div>
+        <div class="flexText">
+            <div>
+                <h1 class="h1Title"><u>🫅🏻 Brother - Junha Park</u></h1>
+                <p class="pTag">
+                    Elementary school student. <br>
+                    <strong>8 years old</strong>, cutie of the house and loooooves games, and origami.
+                    He likes to make some art works and stay home 🏠
+                </p>
+            </div>
+        </div>
+        <!-- End - Brother Row -->
+
+        <br><br><br><br><br><br>
+
+        <!-- dropdown menu -->
+        <div class="fam_dropdown">
+            <p>Who is your favorite?</p>
+            <select id="favFam" onchange="favFam()">
+                <option value="mom">Mom</option>
+                <option value="dad">Dad</option>
+                <option value="sister">Sister</option>
+                <option value="brother">Brother</option>
+                <option value="myself">I love myself the best</option>
+            </select>
+            <div id="wowReally">
+                <p>
+
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <hr>
+        <!-- Contact Info -->
+        <div class="contact, animation">
+            <a class="fa fa-phone" onclick="sorryMsg()"></a>
+            <a href="https://www.instagram.com/tndus0114/" class="fa fa-instagram"></a>
+            <a href="https://mail.google.com/mail/u/0/?to=amyp0114@gmail.com&bcc=admin@example.com&subject=Hey#inbox?compose=GTvVlcSHwCkPfNXGdFVKgwlJnZBCbGjggMTMMMPSzNtpBrNkxPZdhXJqJcLKmXzrhhjZhGlbWdkDs"
+                class="fa fa-google"></a>
+        </div>
+    </section>
+
+    <br><br><br>
+
+</body>
+
+</html>
